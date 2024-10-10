@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            table {
+                width: 80%;
+                height: 90%;
+                border-collapse: collapse;
+            }
+            td {
+                border: 2px solid #53535395;
+                text-align: center;
+                padding: 13px;
+                overflow: hidden;
+                white-space: nowrap;  /* Evita que el texto se divida en múltiples líneas */
+                text-overflow: ellipsis;  /* Muestra '...' cuando el texto es demasiado largo */
+            }
+
+            td:first-child{
+                font-weight: 780;
+                border-top: 2px solid #ddd;
+                border-bottom: transparent;
+                border-left: transparent;
+            }
+
+            tr:first-child td {
+                font-weight: 900;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                border-right: 2px solid #ddd;
+                border-top: transparent;
+                border-left: transparent;
+            }
+
+            tr:nth-child(1) td:last-child {
+                border-right: transparent;
+            }
+
+            tr:nth-child(7) td{
+                border-bottom: 2px solid #ddd;
+            }
+
+            tr:last-child td:nth-child(2),
+            tr:last-child td:nth-child(3),
+            tr:last-child td:nth-child(5),
+            tr:last-child td:nth-child(6) {
+                border: transparent;
+            }
+
+            tr:last-child td:nth-child(4){
+                border-top: transparent;
+                border: 2px solid #53535395;
+                
+            }
+
+            tr:last-child:not(td:nth-child(3)){
+                border: transparent;
+            }
+
+            tr:nth-child(1), tr:nth-child(4), tr:nth-child(7) {
+                height: 30px;
+            }
+
+            tr:not(:nth-child(1)):not(:nth-child(4)):not(:nth-child(7)) {
+                height: 100px;
+            }
+
+            b{
+                font-weight: 700;
+            }
+
+            .descans {
+                border-left: transparent;
+                border-right: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td></td>
+                <td>Dilluns</td>
+                <td>Dimarts</td>
+                <td>Dimecres</td>
+                <td>Dijous</td>
+                <td>Divendres</td>
+            </tr>
+            <tr>
+                <td>8:15<br>9:15</td>
+                <td style="background-color: #b9fdbc70;"><b>Accés a dades</b><br>Pere Sánchez<br>Aula DAW 1</td>
+                <td style="background-color: #fc9a9a70;"><b>M11-Anglès</b><br>Cristina Soler<br>Aula DAW 1</td>
+                <td><b>M11-Anglès</b><br>Cristina Soler<br>Aula DAW 1</td>
+                <td><b>M04-Marques</b><br>Àngel Bosch<br>Aula DAW 1</td>
+                <td style="background-color: #b9fdbc70;"><b>Accés a dades</b><br>Pere Sánchez<br>Aula DAW 1</td>
+            </tr>
+            <tr>
+                <td>9:15<br>10:15</td>
+                <td><b>M01-Sistemes</b><br>Ricard Pla<br>Pere Sánchez<br>Aula DAW 1</td>
+                <td><b>M01-Sistemes</b><br>Ricard Pla<br>Pere Sánchez<br>Aula DAW 1 </td>
+                <td><b>Sostenibilitat</b><br>Montse Bermúdez<br>Aula DAW 1</td>
+                <td><b>M01-Sistemes</b><br>Ricard Pla<br>Pere Sánchez<br>Aula DAW 1</td>
+                <td><b>M03-Programació</b><br>Pere Sánchez<br>Xavier Martín<br>Aula DAW 1<br>Aula A0</td>
+            </tr>
+            <tr>
+                <td class="descans"></td>
+                <td class="descans" colspan="5">Descans</td>
+            </tr>
+            <tr>
+                <td>10:40<br>11:40</td>
+                <td rowspan="2"><b>M03-Programació</b><br>Pere Sánchez<br>Xavier Martín<br>Aula DAW 1<br>Aula A0</td>
+                <td rowspan="2"><b>M03-Programació</b><br>Pere Sánchez<br>Xavier Martín<br>Aula DAW 1<br>Aula A0</td>
+                <td rowspan="2"><b>M02-Bases Dades</b><br>Robert Ventura<br>Adrián Saborido<br>Aula DAW 1</td>
+                <td rowspan="2"><b>M02-Bases Dades</b><br>Robert Ventura<br>Adrián Saborido<br>Aula DAW 1</td>
+                <td><b>M03-Programació</b><br>Pere Sánchez<br>Xavier Martín<br>Aula DAW 1<br>Aula A0</td>
+            </tr>
+            <tr>
+                <td>11:40<br>12:40</td>
+                <td><b>Tutoria</b><br>Robert Ventura<br>Aula DAW 1</td>
+            </tr>
+            <tr>
+                <td class="descans"></td>
+                <td class="descans" colspan="5">Descans</td>
+            </tr>
+            <tr>
+                <td>13:00<br>14:00</td>
+                <td></td>
+                <td></td>
+                <td><b>M04-Marques</b><br>Àngel Bosch<br>Robert Ventura<br>Aula DAW 1</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>
