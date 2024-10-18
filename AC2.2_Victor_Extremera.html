@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            html, body { /* afecta a html y a body */
+                margin: 0;
+                padding: 0;
+                /* formateo simple de la letra general de la pàgina */
+                font-family: "Montserrat", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                overflow: auto;
+            }
+
+            #table {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 80%;
+            }
+            
+            td {
+                width: 25%;
+                height: 4vh;
+                border: 2px solid black;
+            }
+
+            textarea {
+                width: 99%;
+                height: 15vh;
+                resize: none;
+                margin: 2px;
+            }
+
+            button {
+                width: 90%;
+                height: 80%;
+            }
+        </style>
+    </head>
+    <body>
+        <a><img/></a>
+        <h1></h1>
+        <p></p>
+        <div id="table">
+            <table>
+                <tr>
+                    <td colspan="1" style="background-color: #eeeeee;">Cognoms, Nom</td>
+                    <td colspan="3"><input type="text" class="input-text"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: #eeeeee;">Email</td>
+                    <td><input type="email" class="input-text"></td>
+                    <td style="background-color: #eeeeee;">Telèfon</td>
+                    <td><input type="tel" class="input-text"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: #eeeeee;">Aficions</td>
+                    <td>
+                        <select class="input-select">
+                            <option>Hobbies</option>
+                            <option>Esports</option>
+                            <option>Llegir</option>
+                            <option>Videojocs</option>
+                            <option>Cuina</option>
+                            <option>Escriure</option>
+                            <option>Viatjar</option>
+                            <option>Otro...</option>
+                        </select>
+                    </td>
+                    <td style="background-color: #eeeeee;">Esports</td>
+                    <td>
+                        <select class="input-select">
+                            <option>Esports</option>
+                            <option>Fútbol</option>
+                            <option>Bàsquet</option>
+                            <option>Hoquei</option>
+                            <option>Voley</option>
+                            <option>Tenis</option>
+                            <option>Padel</option>
+                            <option>Atletisme</option>
+                            <option>Gimnàs</option>
+                            <option>Otro...</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: #eeeeee;">Practíques les aficions?</td>
+                    <td><input type="checkbox" class="check"></td>
+                    <td style="background-color: #eeeeee;">Fas aquest esport?</td>
+                    <td><input type="checkbox" class="check"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: #eeeeee;">Quant de temps hi dediques?</td>
+                    <td>
+                        <select class="input-select">
+                            <option>Hores</option>
+                            <option>- 1h</option>
+                            <option>2-4h</option>
+                            <option>4-8h</option>
+                            <option>+ 8h</option>
+                        </select>
+                    </td>
+                    <td style="background-color: #eeeeee;">Si es que no. Mires aquest esport?</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="background-color: #eeeeee;">Observacions</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="background-color: #eeeeee;">Escull un vídeo</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><iframe src="" frameborder="0"></iframe></td>
+                    <td colspan="2"><iframe src="" frameborder="0"></iframe></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="checkbox" class="check"></td>
+                    <td colspan="2"><input type="checkbox" class="check"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td><button></button></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
