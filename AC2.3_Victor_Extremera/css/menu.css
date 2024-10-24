@@ -1,0 +1,47 @@
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #858585;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0 0 0 2vw;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    font-weight: 700;
+}
+
+.menu li a:hover {
+    background-color: red;
+    color: #000;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .menu li {
+        display: block;
+        margin: 5px 0;
+    }
+}
