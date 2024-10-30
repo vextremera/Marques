@@ -1,0 +1,69 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color: #222222;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0 0 0 2vw;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    text-decoration: none; 
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    font-weight: 700;
+}
+
+.menu li a:hover {
+    background-color: rgb(123, 123, 123);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.slide {
+    display: flex; 
+    width: 100%; 
+    justify-content: center;
+    height: 45ch;
+    overflow: hidden;
+}
+
+img{
+    display: block;
+    width: 100%;
+    opacity: 60%;
+    z-index: -1;
+}
+
+.content {
+    margin: 5px 60px;
+    display: flex;
+}
+
+.content h2 {
+    font-weight: 800;
+    font-size: 28px;
+    padding: 10px 30px;
+    background-color: #ebebeb;
+    display: flex-start;
+}
+
+.
