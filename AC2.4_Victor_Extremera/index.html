@@ -8,23 +8,22 @@
     	<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/8743/8743996.png">
 	</head>
 	<body>
-
 	<!-- MENU DEL LLOC WEB -->
 		<div class="header">
 			<ul class="menu">
-				<li><a>girona</a></li>
-				<li><a>ciutat</a></li>
-				<li><a>població</a></li>
-				<li><a>imatges</a></li>  
-				<li><a>contacta</a></li>
+				<li><a href="#girona">girona</a></li>
+				<li><a href="#girona">ciutat</a></li>
+				<li><a href="#taula">població</a></li>
+				<li><a href="#galeria">imatges</a></li>  
+				<li><a href="#contacte">contacta</a></li>
 			</ul>
 		</div>
 		<div class="slide">
-			<img alt="girona" src="img/slide.jpg">
+			<!-- <img alt="girona" src="img/slide.jpg"> -->
 		</div>
 		<div class="content">
-			<div class="girona">
-				<h2>Girona</h2>
+			<div class="girona" id="girona">
+				<h2 class="girona-h2">Girona</h2>
 				<p>Girona és una ciutat i un municipi del nord-est de Catalunya, capital de la comarca del Gironès i de la província de Girona. Pertany a l'àmbit de les Comarques Gironines.</p>
 				<p>La ciutat es troba a la confluència de quatre rius: el Ter, l'Onyar, el Güell i el Galligants, a una altitud de 75 m sobre el nivell del mar. El seu terme municipal limita al nord amb Sant Julià de Ramis i Sarrià de Ter, a l'est amb Celrà, al sud-est amb Juià i Quart, al sud-oest amb Fornells de la Selva, Vilablareix i Salt, i a l'oest amb Sant Gregori.</p>
 				<p>El municipi tenia prop de 98.000 habitants el 2014.</p>
@@ -32,45 +31,59 @@
 			</div>
 			<div class="widget">
 				<div class="widget-element">
-					<h2>Que fer?</h2>
+					<h2 class="widget-h2">Que fer?</h2>
 					<p>Com passar el temps a Girona.</p>
-					<h2>Com arribar?</h2>
+				</div>
+				<div class="widget-element">
+					<h2 class="widget-h2">Com arribar?</h2>
 					<p>Arriba des de tots els punts.</p>
 				</div>
 			</div>
 		</div>
-
-		<div>
-			<div>
-				<h2>Població</h2>
-				<table>
-					<tr><th>població</td><th>Habitants</td></tr>
-					<tr><td>girona</td><td>105.000</td></tr>
-					<tr><td>figueres</td><td>54.000</td></tr>
-					<tr><td>blanes</td><td>25.000</td></tr>
-					<tr><td>l'escala</td><td>4.500</td></tr>
-					<tr><td>roses</td><td>6.500</td></tr>
-				</table>
-			</div>
+		<div class="table-container" id="poblacio">
+			<h2>Població</h2>
+			<table>
+				<tr>
+					<th>Població</th>
+					<th>Habitants</th>
+				</tr>
+				<tr>
+					<td>girona</td>
+					<td>105.000</td>
+				</tr>
+				<tr>
+					<td>figueres</td>
+					<td>54.000</td>
+				</tr>
+				<tr>
+					<td>blanes</td>
+					<td>25.000</td>
+				</tr>
+				<tr>
+					<td>l'escala</td>
+					<td>4.500</td>
+				</tr>
+				<tr>
+					<td>roses</td>
+					<td>6.500</td>
+				</tr>
+			</table>
 		</div>
-
-		<div>
-			<div>
+		<div class="gallery-container" id="galeria">
 			<h2>Galeria</h2>
-			</div>
-			<div>
-				<div><img src="imatges/foto1.jpg"></div>
-				<div><img src="imatges/foto2.jpg" alt="foto2"></div>
-				<div><img src="imatges/foto3.jpg"></div>
-			</div>
-			<div>
-				<div><img src="imatges/foto6.jpg" alt="foto6"></div>
-				<div><img src="imatges/foto7.jpg" alt="foto7"></div>
-				<div><img src="imatges/foto8.jpg" alt="foto8"></div>
+			<div class="gallery-grid">
+				<div class="gallery-item"><img src="img/foto1.jpg" alt="Foto 1"></div>
+				<div class="gallery-item"><img src="img/foto2.jpg" alt="Foto 2"></div>
+				<div class="gallery-item"><img src="img/foto3.jpg" alt="Foto 3"></div>
+				<div class="gallery-item"><img src="img/foto4.jpg" alt="Foto 4"></div>
+				<div class="gallery-item"><img src="img/foto5.jpg" alt="Foto 5"></div>
+				<div class="gallery-item"><img src="img/foto6.jpg" alt="Foto 6"></div>
+				<div class="gallery-item"><img src="img/foto7.jpg" alt="Foto 7"></div>
+				<div class="gallery-item"><img src="img/foto8.jpg" alt="Foto 8"></div>
+				<div class="gallery-item"><img src="img/foto1.jpg" alt="Foto 9"><p>More ...</p></div>
 			</div>
 		</div>
-
-		<div class="footer">
+		<div class="footer" id="contacte">
 			<p>smx - 2020</p>
 		</div>
 	</body>
