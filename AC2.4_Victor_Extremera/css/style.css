@@ -80,6 +80,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    justify-content: center;
 }
 
 .widget-element {
@@ -91,13 +92,20 @@ html, body {
     /* padding: 15px 40px; */
     height: 120px;
     width: 290px;
+    margin: 20px 0 0 0;
+    text-decoration: none;
+    transition: ease 2s;
+}
+
+.widget-element:hover {
+    transform: scale(1.1); 
 }
 
 .widget-h2 {
     font-weight: 800;
     font-size: 24px;
     text-align: right;
-    margin: 0;
+    margin: 10px 10px 0 0;
     padding: 10px 20px 0 20px;
 }
 
@@ -106,7 +114,7 @@ html, body {
     font-size: 18px;
     padding: 5px 10px;
     max-width: 270px;
-    margin: 0;
+    margin: 0 10px 0 0;
 }
 
 .table-container {
@@ -158,6 +166,7 @@ tr:nth-child(even) {
     width: 92%;
     margin: auto;
     text-align: center;
+    margin-bottom: 5vh;
 }
 
 .gallery-container h2 {
@@ -177,10 +186,12 @@ tr:nth-child(even) {
 
 .gallery-item {
     width: 100%;
+    height: 25vh;
     aspect-ratio: 1; /* Mantiene la proporción cuadrada para todas las celdas */
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
 .gallery-item img {
@@ -194,6 +205,47 @@ tr:nth-child(even) {
     transform: scale(1.05);
 }
 
-.gallery-item:nth-child(9) {
+.gallery-item p:hover{
+    transform: scale(1.05);
+}
+
+.gallery-item:nth-child(9) img {
     opacity: 12%;
+}
+
+.gallery-item:nth-child(9) p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 100%;
+}
+.footer {
+    background-color: #222222;
+    padding: 15px 0;
+    width: 100%; 
+    bottom: 0;  
+    z-index: 5; 
+    text-align: center; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer p {
+    color: white; 
+    margin: 5px 0; 
+    font-weight: 700; 
+    letter-spacing: 1px;
+    transition: ease 0.3s;
+}
+
+.footer p:hover {
+    transform: scale(1.1);
 }
