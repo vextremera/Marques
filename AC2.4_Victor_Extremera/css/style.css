@@ -59,7 +59,7 @@ html, body {
 }
 
 #girona, #poblacio, #galeria { /* com el header és fixa, al redirigirse a un apartat amb els links es queda abaix, i no es veu el titol */
-    display: absolute; /* he pensat en fer uns div al principi de cada apartat amb display absolut perquè no modifiqui altres continguts segons la seva posició */
+    /* he pensat en fer uns div al principi de cada apartat */
     margin-top: -60px; /* i he mogut aquests divs cap adalt, amb margin-top negatiu */
     margin-bottom: 100px; /* després els contigut després d'aixó es posava inmediatament seguint el div, i es superposaven els continguts */
 } /*llavors he fet el amrgin negatiu i un margin bottom, per retornar el contingut real al seu lloc */
@@ -76,7 +76,6 @@ html, body {
     font-size: 28px;
     padding: 10px 30px;
     background-color: #ebebeb;
-    display: flex-start;
 }
 
 .girona {
@@ -136,7 +135,6 @@ html, body {
     font-size: 28px;
     padding: 10px 30px;
     background-color: #ebebeb;
-    display: flex-start;
 }
 
 table {
@@ -182,7 +180,6 @@ tr:nth-child(even) { /* aquest a tots els tr parells */
     font-size: 28px;
     padding: 10px 30px;
     background-color: #ebebeb;
-    display: flex-start;
 }
 
 .gallery-grid {
