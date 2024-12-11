@@ -59,3 +59,19 @@ function eliminaDescriptiva() {
         llista.removeChild(llista.lastChild); // Elimina títol
     }
 }
+
+// & ----------------------- NETEJAR -------------------------
+function netejarOrdenada() {
+    const llista = document.getElementById('ordenada');
+    llista.innerHTML = '';
+}
+
+function netejarDesordenada() {
+    const llista = document.getElementById('desordenada');
+    llista.innerHTML = '';
+}
+
+function netejarDescriptiva() {
+    const llista = document.getElementById('descriptiva');
+    llista.innerHTML = '';
+}
