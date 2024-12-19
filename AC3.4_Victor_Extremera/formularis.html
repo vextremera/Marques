@@ -14,24 +14,24 @@
         <div id="form-content">
             <div id="div-nom" class="form-group">
                 <label for="nom">Nom: <span>*</span></label>
-                <input type="text" id="nom" name="nom" class="obligatori">
+                <input placeholder="Pere" type="text" id="nom" name="nom" class="obligatori">
             </div>
 
             <div id="div-cognoms1" class="form-group">
                 <label for="cognoms1">Primer Cognom: <span>*</span></label>
-                <input type="text" id="cognoms1" name="cognoms1" class="obligatori">
+                <input placeholder="Pi" type="text" id="cognoms1" name="cognoms1" class="obligatori">
             </div>
 
             <div id="div-cognoms2" class="form-group">
                 <label for="cognoms2">Segon Cognom:</label>
-                <input type="text" id="cognoms2" name="cognoms2">
+                <input placeholder="Neda" type="text" id="cognoms2" name="cognoms2">
             </div>
 
             <div id="div-sexe" class="form-group">
                 <label for="sexe">Sexe: <span>*</span></label>
                 <div id="div-sexe-masculi" class="radio-group">
                     <label for="masculi">Masculí</label>
-                    <input type="radio" id="masculi" name="sexe" value="masculi" class="obligatori">
+                    <input type="radio" id="masculi" name="sexe" value="masculi">
                 </div>
                 <div id="div-sexe-femeni" class="radio-group">
                     <label for="femeni">Femení</label>
@@ -41,57 +41,64 @@
 
             <div id="div-data-naixement" class="form-group">
                 <label for="data">Data de Naixement <span>*</span></label>
-
                     <select id="select-dia">
-                        <option value="placeholder" selected class="obligatori">Dia</option>
+                        <option value="placeholder" selected>Dia</option>
                     </select>
 
                     <select id="select-mes">
-                        <option value="placeholder" selected class="obligatori">Mes</option>
+                        <option value="placeholder" selected>Mes</option>
                     </select>
 
                     <select id="select-any">
-                        <option value="placeholder" selected class="obligatori">Any</option>
+                        <option value="placeholder" selected>Any</option>
                     </select>
+                <p class="input-error"></p>
             </div>
 
             <div id="div-nif" class="form-group">
                 <label for="nif">NIF: <span>*</span></label>
-                <input type="text" id="nif" name="nif" class="obligatori">
+                <input placeholder="12345678A" type="text" id="nif" name="nif" class="obligatori">
             </div>
 
             <div id="div-adreca" class="form-group">
                 <label for="adreca">Adreça:</label>
-                <input type="text" id="adreca" name="adreca">
+                <input placeholder="C/ Mas Pons de la Nova nº 432" type="text" id="adreca" name="adreca">
             </div>
 
             <div id="div-poblacio" class="form-group">
                 <label for="poblacio">Població:</label>
-                <input type="text" id="poblacio" name="poblacio">
+                <input placeholder="Blanes" type="text" id="poblacio" name="poblacio">
             </div>
 
             <div id="div-email" class="form-group">
                 <label for="email">Email: <span>*</span></label>
-                <input type="email" id="email" name="email" class="obligatori">
+                <input placeholder="PerePi@exemple.cat" type="email" id="email" name="email" class="obligatori">
             </div>
 
             <div id="div-telefon" class="form-group">
                 <label for="telefon">Telèfon:</label>
-                <input type="tel" id="telefon" name="telefon">
+                <input placeholder="612 34 56 78" type="tel" id="telefon" name="telefon">
             </div>
 
             <div id="div-contrasenya" class="form-group">
                 <label for="contrasenya">Contrasenya: <span>*</span></label>
-                <input type="password" id="contrasenya" name="contrasenya" class="obligatori">
+                <input placeholder="P@ssw0rd" type="password" id="contrasenya" name="contrasenya" class="obligatori">
+                <button type="button" id="toggle_contrasenya" class="toggle-visibility">
+                    <img src="img/hide.jpg" alt="Mostrar Contraseña" id="icon_contrasenya">
+                </button>
             </div>
-
+            
             <div id="div-repetir-contrasenya" class="form-group">
                 <label for="repetir_contrasenya">Repetir Contrasenya: <span>*</span></label>
-                <input type="password" id="repetir_contrasenya" name="repetir_contrasenya" class="obligatori">
+                <input placeholder="P@ssw0rd" type="password" id="repetir_contrasenya" name="repetir_contrasenya" class="obligatori">
+                <button type="button" id="toggle_repetir_contrasenya" class="toggle-visibility">
+                    <img src="img/hide.jpg" alt="Mostrar Contraseña" id="icon_repetir_contrasenya">
+                </button>
             </div>
 
             <div id="div-submit" class="form-group">
                 <button id="button-submit" type="submit">Enviar</button>
+                <button id="button-neteja" type="button">Netejar</button>
             </div>
         </div>
         </form>

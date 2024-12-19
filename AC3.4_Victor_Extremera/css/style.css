@@ -60,6 +60,10 @@ input:focus {
     background-color: #e4e4e4;
 }
 
+input::placeholder {
+    color: #cbcbcb;
+}
+
 input[type="radio"] {
     display: initial;
     padding: initial;
@@ -93,13 +97,43 @@ input[type="radio"] {
     justify-content: center;
 }
 
-button {
+#button-submit, #button-neteja {
     padding: 10px 20px;
-    background-color: #91ffc2;
     border-radius: 5px;
     border: 2px solid #9f9f9f;
     font-weight: bolder;
     font-size: 17px;
     cursor: wait;
     margin: 10px 0 0 0;
+}
+
+#button-submit {
+    background-color: #91ffc2;
+    margin-right: 10px;
+}
+
+#button-neteja {
+    background-color: #ff9191;
+    margin-left: 20px
+}
+
+#repetir_contrasenya, #contrasenya {
+    display: inline-block;
+    width: 89%;
+}
+
+#toggle_repetir_contrasenya, #toggle_contrasenya {
+    display: inline;
+    border: none;
+    height: 25px;
+    width: 34px;
+    padding: 0;
+    scale: 0.7;
+}
+
+#toggle_repetir_contrasenya img, #toggle_contrasenya img {
+    height: 30px;
+    width: 34px;
+    margin-bottom: -10px;
+    padding: 0;
 }
