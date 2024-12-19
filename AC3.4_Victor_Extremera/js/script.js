@@ -29,6 +29,31 @@ function validarObligatoris() {
     return isValid;
 }
 
+function validarContrasenya(){
+    const contrasenya = document.getElementById('contrasenya');
+    const minLenght = 8;
+
+    let errorMessage = document.getElementById('contrasenya-error');
+
+    if (!errorMessage) {
+        errorMessage = document.createElement('p');
+        errorMessage.id = 'contrasenya-error';
+        errorMessage.style.color = 'red';
+        errorMessage.style.fontWeight = 'bold';
+        errorMessage.style.fontSize = '12px';
+        document.getElementById('div-contrasenya').appendChild(errorMessage);
+    }
+
+    if (!contrasenya.value) {
+        errorMessage.textContent = 'Camp obligatori';
+        contrasenya.focus();
+    }
+    if (contrasenya.value < minLenght) {
+        errorMessage.textContent = "La contrasenya ha de contenir mínim 8 caràcters"
+        contrasenya.focus();
+    }
+}
+
 function validarEmail() {
     const email = document.getElementById('email');
     const emailInput = email.value;
